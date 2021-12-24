@@ -7,7 +7,7 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.secret_key = 'bizim cok zor gizli sozcugumuz'
 
-myclient = pymongo.MongoClient("mongodb+srv://yeditepeuser:yeditepe34@cluster0.tqcqy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+
 
 mydb = myclient["atlasDenemeDB"]
 kullanicilar_tablosu = mydb["kullanicilar"]
